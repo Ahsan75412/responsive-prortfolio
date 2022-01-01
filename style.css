@@ -1,42 +1,237 @@
 *{
-    margin: 0 ; padding: 0; box-sizing: border-box; font-family: 'PT Sans', sans-serif;
+    margin: 0 ; 
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Roboto', sans-serif */
+}
 
-    font-family: 'Roboto', sans-serif
+html{
+    font-size: 80.5%;
+    scroll-behavior: smooth;
+}
+
+h1,h2{
+    font-family: sans-serif;
+    color: #283526;
+
+}
+
+h4 , h3{
+    font-family: sans-serif;
+    color: #283526;
+
+}
+
+h3{
+    font-weight:700;
+    font-size: 22px;
+    line-height: 60px;
+    text-transform: capitalize;
+}
+
+p ,a , li, button{
+    font-family: 'Roboto', sans-serif;
+    color: #888888;
+}
+
+p{
+    font-size: 18px;
+    line-height: 150%;
+    font-style: normal;
+    font-weight: normal;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+li{
+    list-style: none;
+}
+button{
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    line-height: 36px;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-style: none;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+/* ................. menu style start here ...................... */
+
+header{
+    padding: 0 100px;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 120px ;
+}
+
+header nav .left-side-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+  
+}
+
+header nav .left-side-menu a img{
+        width: 130px;
+        height: 55px;
+}
+
+header nav .left-side-menu .sub-menu{
+    height: inherit;
+    display: flex;
+}
+
+header nav .left-side-menu .sub-menu a {
+    margin-right: 40px;
+}
+
+header nav .left-side-menu .sub-menu a li{
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: capitalize;
+    transition: all 0.2s;
+}
+
+header nav .left-side-menu .sub-menu a li:hover{
+    color: #2bd984;
 }
 
 
 
+/*...................... right side menu start here...................... */
 
+header .right-side-menu{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
 
+header .right-side-menu .sub-menu{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.icon{
+    color: #000;
+}
 
+header .right-side-menu .sub-menu a{
+    margin-right: 50px;
+    padding: 5px 8px;
+    background: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    border-radius: 10px;
+    z-index: 9;
+    position: relative;
+}
 
+header .right-side-menu .sub-menu button{
+       padding: 5px 20px;
+       background-color: orange;
+       color: #fff;
+       z-index: 9;
+       position: relative;
+}
 
+header .right-side-menu .sub-menu button:hover{
+    background-color: #266446;
+    
+}
 
-
-
-
-
-
-
-
-/* responsive start here */
-@media (max-width: 992px){
-
+.icon:hover{
+    color: #fff;
    
 }
 
-@media (max-width: 768px){
-   
-
-    
+header .right-side-menu .sub-menu a:hover{
+    background-color: orange;
     
 }
 
-@media (max-width: 600px){
 
-   
+/*...................... hero section start here....................... */
+
+.main-hero-section{
+    padding: 0 100px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px 0 ;
+
+}
+/* .hero-left-side{
+    margin-top: -300px;
+    width: 50%;
+} */
+
+.main-hero-section .hero-left-side{
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
-@media (max-width: 400px){
+.main-hero-section h1{
+    width: 550px;
+    font-size: 70px;
+    line-height: 80px;
+    margin-bottom: 40px;
+}
+
+.main-hero-section p{
+    margin-bottom: 80px;
+    width: 450px;
+}
+
+.main-hero-section button{
+    width: 220px;
+    height: 60px;
+}
+
+
+.main-hero-section button:hover{
+    color: #fff;
+    background-color: #2bd984;
+}
+
+
+
+.main-hero-section .hero-right-side{
+    background-color: #e4f8ed;
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 90px 20px 0px 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-hero-section .hero-right-side img{
+    width: 100%;
+    height: 100vh;
     
 }
+
+
+
