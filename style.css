@@ -179,7 +179,7 @@ header .right-side-menu .sub-menu a:hover{
 
 .main-hero-section .hero-left-side{
     width: 50%;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -207,6 +207,7 @@ header .right-side-menu .sub-menu a:hover{
 .main-hero-section button:hover{
     color: #fff;
     background-color: #2bd984;
+    transition: all 0.6s;
 }
 
 
@@ -214,7 +215,7 @@ header .right-side-menu .sub-menu a:hover{
 .main-hero-section .hero-right-side{
     background-color: #e4f8ed;
     width: 50%;
-    height: 90vh;
+    height: 100vh;
     position: absolute;
     right: 0;
     top: 0;
@@ -231,6 +232,82 @@ header .right-side-menu .sub-menu a:hover{
     
 }
 
+/* ................Animate left to right.................. */
+
+.top-animate {
+    animation-name: fadeInLeft;
+    animation-duration: 1.5s;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+/* ................Animate right to left.................. */
+
+
+
+.top-animation {
+    animation-name: fadeInRight;
+    animation-duration: 1.5s;
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* ..................animation hover effect.............. */
+
+.top-animation:hover {
+    animation: float 1.5s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-40px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+
+.about-left-side:hover{
+    animation: float 1.5s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-40px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+
+}
 
 
 /*......... about me section start here.......................... */
@@ -246,9 +323,12 @@ header .right-side-menu .sub-menu a:hover{
 
    
 }
+.about-left-side{
+    width: 50%;
+}
 
 .about-left-side img{
-    width: 50%;
+    width: 100%;
     height: inherit;
     
 }
@@ -314,6 +394,64 @@ header .right-side-menu .sub-menu a:hover{
     html{
         font-size: 50% ;
     }
+
+   
+    .main-hero-section h1{
+        width: 450px;
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 25px;
+    }
+
+    .main-hero-section .hero-left-side{
+        width: 50%;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .main-hero-section p{
+        margin-bottom: 40px;
+        width: 450px;
+    }
+    .main-hero-section button{
+        font-size: 15px;
+        width: 190px;
+        padding: 8px 25px;
+        font-weight: bold;
+    }
+
+    .main-hero-section .hero-right-side{
+        background-color: #b3ddc6;
+        width: 50%;
+        height: 90vh;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-radius: 90px 20px 0px 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-section{
+        height: 100vh;
+    }
+
+    .about-right-side h4{
+        font-size: 15px;
+        text-transform: lowercase;
+        border-bottom: 1px solid rgb(0, 68, 255) ;
+        width: 180px;
+    }
+
+    .about-right-side h2{
+        font-size: 18px;
+    }
+    
+
+
 }
 
 
@@ -326,9 +464,29 @@ header .right-side-menu .sub-menu a:hover{
 
   @media (max-width: 980px){
     header, .main-hero-section{
-        padding: 0 80px;
+        padding: 0 60px;
+        
     }
+  .main-hero-section {
+      width: 100%;
+      height: 80vh;
+  }
 
+  .main-hero-section h1{
+    width: 350px;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.main-hero-section h3{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+    .left-side-menu .sub-menu{
+        margin-left: 100px;
+    }
     .main-hero-section .hero-right-side{
         width: 100%;
         position: relative;
@@ -340,7 +498,7 @@ header .right-side-menu .sub-menu a:hover{
 
     .main-hero-section .hero-right-side img{
         width: 500px;
-        height: 600px;
+        height: auto;
         margin-right: 0;
         margin-top: 60px;
     }
@@ -351,17 +509,56 @@ header .right-side-menu .sub-menu a:hover{
         
     }
 
-    header nav .right-side-menu .sub-menu a{
-        width: 100px;
-        height: 40px;
-        border: 2px solid #2bd984;
-        border-radius: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-       
-
+ #right-menu a{
+     display: none;
  }
+
+
+
+
+
+
+ .about-section{
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding: 0 40px;
+
+   
+}
+
+.about-section .about-right-side{
+    text-transform: uppercase;
+}
+
+.about-section .about-right-side h1{
+    color: #283526;
+    width: 550px;
+    font-size: 40px;
+    margin-bottom: 25px;
+
+}
+.about-section .about-right-side p{
+    text-transform: capitalize;
+    font-size: 15px;
+    margin-bottom: 30px;
+
+}
+.about-right-side h3{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.about-right-side h4{
+    text-transform: lowercase;
+    border-bottom: 1px solid orange ;
+    width: 160px;
+}
+
+
  
 
 
@@ -370,107 +567,176 @@ header .right-side-menu .sub-menu a:hover{
 
 
 
+@media (max-width: 840px){
+    .right-side-menu .sub-menu button{
+        display: none;
+    }
+
+}
+
+
+
 /*.............for Mobile......... */
 @media (max-width: 770px){
-    header , .main-hero-section{
-        padding: 0 50px;
+ 
+    nav{
+        width: 100%;
     }
-    
-  header nav{
-      padding-top: 10px;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-  }
 
-  header nav .left-side-menu{
-      width: 100%;
-      display: block;
-      /* order: 2; */
-  }
-  header nav .left-side-menu img{
-      display: block;
-      width: 100%;
-  }
-
-  header  .left-side-menu .sub-menu{
-      width: 100%;
-      display: block;
-  }
-  header nav .left-side-menu .sub-menu a{
-      margin-right: 20px;
-  }
-
-  header nav .left-side-menu .sub-menu a li{
-      font-size: 1.7rem;
-  }
+    header, .main-hero-section{
+        padding: 0 50px;
+        
+    }
 
 
- header nav .right-side-menu {
-     width: 100%;
-     order: 1;
- }
+#right-btn{
+    display: none;
+    padding-bottom: 0;
+  
+}
 
- header nav .right-side-menu .sub-menu a{
-        width: 100px;
-        height: 40px;
-        border: 2px solid #2bd984;
-        border-radius: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 10px;
- }
-
- header nav .right-side-menu .sub-menu a li{
-     font-size: 15px;
-     margin-right: 0;
-     
- }
- header nav .right-side-menu button{
-     width: 130px;
-     font-size: 15px;
-     
- }
-
-
-  .main-hero-section{
-      width: 100%;
-      height: 80vh;
-      display: flex;
-      flex-direction: column;
-  }
-
-  .main-hero-section .hero-left-side{
-      order: 2;
-      width: 100%;
-  }
-
-  .main-hero-section .hero-left-side h1{
-      width: 350px;
-      font-size: 50px;
-      line-height: 60px;
-      margin-bottom: 20px;
-  }
-
-  .main-hero-section .hero-right-side{
-    order: 1;
-    /* width: 100%; */
+.main-hero-section{
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    background: transparent;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 50px;
+   
 }
 
 
 .main-hero-section .hero-right-side img{
-    width: 450px;
-    height: 450px;
-    margin: 0;
-    margin-top: 60px;
+    flex-direction: column;
 }
 
+.hero-right-side #iamage{
+    display: none;
+}
+
+
+
+
+.about-section{
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    margin: 80px 0;
+    padding: 0px 20px;
+    
+}
+
+.about-section .about-right-side{
+    text-transform: uppercase;
+}
+
+.about-section .about-right-side h1{
+    color: #283526;
+    width: 400px;
+    font-size: 25px;
+    margin-bottom: 15px;
+
+}
+.about-section .about-right-side p{
+    font-size: 14px;
+    margin-bottom: 30px;
+
+}
+.about-right-side h3{
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.about-right-side h4{ 
+    border-bottom: 1px solid rgb(255, 0, 128) ;
+    width: 180px;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px){
+ 
+    .left-side-menu{
+
+        flex-direction: column;
+     
+
+    }
+
+    .main-hero-section{
+        margin-top: 100px;
+        width: 100%;
+
+    }
+    .main-hero-section .hero-left-side{
+        display: flex;
+        width: 100%;
+        
+
+      
+    }
+
+
+
+    .main-hero-section .hero-right-side img{
+       display: none;
+    }
+
+.hero-right-side{
+    display: none;
+}
+
+
+
+    .about-section{
+        width: 100%;
+        height: auto; 
+        display: flex;
+        margin: 50px 0;
+        padding: 10px 25px;
+        flex-direction: column;
+        
+    }
+    .about-section .about-left-side {
+        width: 100%;
+    }
+    
+    .about-section .about-right-side{
+        width: 100%;
+        text-transform: uppercase;
+    }
+    
+    .about-section .about-right-side h1{
+        color: #283526;
+        width: 300px;
+        font-size: 20px;
+        margin-bottom: 15px;
+    
+    }
+    .about-section .about-right-side p{
+        font-size: 14px;
+        margin-bottom: 20px;
+    
+    }
+
+    .about-section .about-right-side h4{
+        margin-bottom: 30px;
+    }
+ 
+    
+   
 
 }
 
