@@ -371,6 +371,69 @@ header .right-side-menu .sub-menu a:hover{
 
 
 
+/* ............Services section start here................... */
+.services{
+    width: 100%;
+    height: 70vh;
+    padding: 60px 250px;
+    align-items: center;
+    
+}
+.row{
+    justify-content: center;
+    align-items: center;
+    
+}
+.row h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 35px;
+    padding-bottom: 50px;
+}
+.row h4{
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.column{
+    margin-left: 50px;
+    height: 350px;
+    float: left;
+    width: 25%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+
+}
+
+.column i{
+    padding-bottom: 20px;
+    font-size: 85px;
+    width: 100%;
+}
+
+.column h1{
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+.active{
+    background: #2bd984;
+    color: #fff;
+}
+.active p {
+   color: #fff;
+}
+
+.column:hover{
+    background: #2bd984;
+    color: #fff;
+    transition: all 0.4s;
+}
+.text-white:hover{
+    color: #fff;
+}
 
 
 
@@ -449,6 +512,43 @@ header .right-side-menu .sub-menu a:hover{
     .about-right-side h2{
         font-size: 18px;
     }
+
+
+
+
+
+
+    .services{
+        height: 100vh;
+        padding: 60px 70px;
+          
+    }
+ 
+    .row h4{
+        font-size: 12px;
+        
+    }
+ 
+    
+    .column i{
+        font-size: 70px;
+      
+    }
+    
+    .column h1{
+        font-size: 15px;
+        text-transform: uppercase;
+        padding-bottom: 15px;
+    }
+ 
+
+
+
+
+
+  
+
+    
     
 
 
@@ -559,6 +659,26 @@ header .right-side-menu .sub-menu a:hover{
 }
 
 
+.services{
+    height: 100vh;
+    padding: 20px 40px;
+      
+}
+
+
+.column i{
+    font-size: 70px;
+  
+}
+
+.column h1{
+    font-size: 15px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+
+
  
 
 
@@ -654,6 +774,16 @@ header .right-side-menu .sub-menu a:hover{
 }
 
 
+.column{
+    width: 90%;
+    margin-top: 20px;
+}
+
+.column h1{
+    padding-top: 20px;
+}
+
+
 
 
 }
@@ -734,6 +864,17 @@ header .right-side-menu .sub-menu a:hover{
     .about-section .about-right-side h4{
         margin-bottom: 30px;
     }
+
+
+
+    
+    .column{
+        width: 100%;
+        margin-top: 20px;
+        
+    }
+
+  
  
     
    
