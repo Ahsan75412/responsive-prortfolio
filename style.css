@@ -440,6 +440,45 @@ header .right-side-menu .sub-menu a:hover{
 
 
 
+/*.................. footer section start here .................*/
+footer{
+    height: 20vh;
+    width: 100%;
+    background: rgb(37, 36, 36);
+    padding: 10px 60px; 
+    
+}
+
+
+#contact{
+    display: flex;
+    justify-content: center;
+    
+}
+#contact a li i{
+    flex-direction: column;
+    margin-left: 80px;
+   
+}
+.f-icon{
+    font-size: 30px;
+    padding-top: 10px;
+    color: #fff;
+   
+}
+
+.f-icon:hover{
+    color: #2bd984;
+}
+
+.copy{
+    text-align: center;
+    margin-top: 60px;
+    margin-left: 100px;
+}
+
+
+
 
 
 
@@ -448,7 +487,7 @@ header .right-side-menu .sub-menu a:hover{
 /*............................. Responsive start here............................. */
 
 
-/*.............for Laptop......... */
+/*...................... for Laptop ....................... */
 @media (max-width: 1280px){
     header, .main-hero-section{
         padding: 0 100px;
@@ -545,8 +584,21 @@ header .right-side-menu .sub-menu a:hover{
 
 
 
+ 
+    .f-icon{
+        font-size: 25px;
+        padding-top: 10px;
+        color: #fff;
+       
+    }
+    
 
-  
+    .copy{
+        text-align: center;
+        margin-top: 35px;
+        margin-left: 80px;
+    }
+    
 
     
     
@@ -679,6 +731,35 @@ header .right-side-menu .sub-menu a:hover{
 
 
 
+footer{
+ 
+    width: 100%;
+    margin-top: 30px;
+    
+}
+
+
+
+
+.f-icon{
+    font-size: 20px;
+    padding-top: 10px;
+    color: #fff;
+   
+}
+
+
+
+.copy{
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 70px;
+    padding-bottom: 10px;
+}
+
+
+
+
  
 
 
@@ -693,6 +774,9 @@ header .right-side-menu .sub-menu a:hover{
     }
 
 }
+
+
+
 
 
 
@@ -744,6 +828,7 @@ header .right-side-menu .sub-menu a:hover{
     display: flex;
     margin: 80px 0;
     padding: 0px 20px;
+    padding-bottom: 30px;
     
 }
 
@@ -775,13 +860,30 @@ header .right-side-menu .sub-menu a:hover{
 
 
 .column{
-    width: 90%;
+    width: 100%;
     margin-top: 20px;
+    
 }
 
 .column h1{
     padding-top: 20px;
 }
+
+
+
+
+
+
+
+footer{
+    width: 100%;
+    margin-top: 800px;
+}
+
+
+
+
+
 
 
 
@@ -824,9 +926,9 @@ header .right-side-menu .sub-menu a:hover{
        display: none;
     }
 
-.hero-right-side{
-    display: none;
-}
+    .hero-right-side{
+        display: none;
+    }
 
 
 
@@ -869,8 +971,9 @@ header .right-side-menu .sub-menu a:hover{
 
     
     .column{
-        width: 100%;
-        margin-top: 20px;
+        width: 80%;
+        margin-top: 40px;
+        height: auto;
         
     }
 
